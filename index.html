@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--Created by Jasmine Ojeda
+	Email: jasmineojeda01@gmail.com
+		   jojed016@ucr.edu
+	Computer Science Major, University of California - Riverside
+	7-22-2020
+-->
+<html>
+	<head>
+		<title> ROCK PAPER SCISSORS </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="script.js"> </script>
+		<link rel="stylesheet" href="stylesheet.css"> </link>
+		<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="header">
+			<h1> ROCK PAPER SCISSORS!!! </h1>
+		</div>
+		<table>
+			<tr>
+				<th class="container">
+					<div id="options">
+						<a href="#" onclick='game("paper")'> <img class="fighter" src="images/paper.png" alt="PAPER" onmouseover="style.opacity=1;" onmouseout="style.opacity=0.7;"> </a>
+						<a href="#" onclick='game("scissors")'> <img class="fighter" src="images/scissors.png" alt="SCISSORS" onmouseover="style.opacity=1;" onmouseout="style.opacity=0.7;"> </a>
+						<div style="clear:both"> </div>
+						<a href="#" onclick='game("rock")'> <img class="fighter" src="images/rock.png" alt="ROCK" onmouseover="style.opacity=1;" onmouseout="style.opacity=0.7;"> </a>
+					</div>
+					<div id="player" style="display:none">
+						<img id="playerChoice" class="player" src="images/readyStance.gif" alt="YOUR FIGHTER!" style="transform:scaleX(-1);">
+					</div>
+				</th>
+				<th class="container">
+					<div>
+						<img id="enemy" class="player" src="images/readyStance.gif" alt="YOUR ENEMY!">
+					</div>
+				</th>
+			</tr>
+			<tr id="display">
+				<th>
+					<p> Choose your fighter! </p>
+				</th>
+				<th>
+					<p> Your Rival </p>
+				</th>
+			</tr>
+		</table>
+		<div id="reset">
+			<a href="#" onclick="reset();"> <p> Try again? </p> </a>
+		</div>
+		<div>
+			<p id="countDown"> READY? </p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+
+img {
+	margin: 10px;
+	opacity: 0.75;
+}
+
+h1 {
+	margin: 0px;
+}
+
+p {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 200%;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table, tr, th {
+	border: solid black 5px;
+	margin: none;
+}
+tr {
+	width: 100%;
+}
+
+th {
+	width: 50%;
+}
+
+.fighter {
+	width: 150px;
+	height: 150px;
+}
+
+.player {
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+}
+
+#display p {
+	margin: 0px;
+}
+
+#reset {
+	align: center;
+	text-align: center;
+	border: solid black 5px;
+	margin: 0px;
+	visibility: hidden;
+}
+
+#reset a p {
+	margin: 0px;
+}
+
+#header {
+	text-align: center;
+	font-size: 35px;
+	font-family: 'Monoton', cursive;
+	margin: none;
+}
+
+#countDown {
+	position: fixed;
+	top: 27.5%;
+	left: 40%;
+	right: 40%;
+	background-color: white;
+	border: solid black 5px;
+	border-radius: 50%;
+	text-align: center;
+	visibility: hidden;
+	padding: 30px;
+	color: black;
+}
+
+@media only screen and (max-width:620px) {
+	#countDown {
+		position: fixed;
+		top: 50%;
+		left: 40%;
+		right: 40%;
+		background-color: white;
+		border: solid black 5px;
+		border-radius: 50%;
+		text-align: center;
+		visibility: hidden;
+		padding: 30px;
+		color: black;
+		size: 10px;
+	}
+}
