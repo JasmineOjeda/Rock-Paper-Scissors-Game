@@ -1,3 +1,5 @@
+let playerScore = 0;
+let computerScore = 0;
 
 function game(playerChoice) {
 	//Setup
@@ -115,11 +117,15 @@ function reset() {
 function win() {
 	document.getElementById('countDown').innerHTML = "YOU WIN!";
 	document.getElementById('countDown').style.color = "green";
+	playerScore += 1;
+	document.getElementById('playerScore').innerHTML = "Player: " + playerScore;
 }
 
 function lose() {
 	document.getElementById('countDown').innerHTML = "FATALITY!";
 	document.getElementById('countDown').style.color = "red";
+	computerScore += 1;
+	document.getElementById('computerScore').innerHTML = "Computer: "+ computerScore;
 }
 
 function tie() {

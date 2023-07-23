@@ -41,14 +41,8 @@ th {
 	margin: 20px;
 }
 
-#display p {
-	margin: 0px;
-}
-
 #reset {
-	align: center;
 	text-align: center;
-	border: solid black 5px;
 	margin: 0px;
 	visibility: hidden;
 }
@@ -66,7 +60,7 @@ th {
 
 #countDown {
 	position: fixed;
-	top: 27.5%;
+	top: 25%;
 	left: 40%;
 	right: 40%;
 	background-color: white;
@@ -79,6 +73,13 @@ th {
 }
 
 @media only screen and (max-width:620px) {
+	#header {
+		text-align: center;
+		font-size: 10px;
+		font-family: 'Monoton', cursive;
+		margin: none;
+	}
+
 	#countDown {
 		position: fixed;
 		top: 50%;
