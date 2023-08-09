@@ -64,6 +64,11 @@ function result() {
 	let player = document.getElementById('playerChoice').src;
 	let enemy = document.getElementById('enemy').src;
 
+	player = player.substring(player.lastIndexOf('/') + 1)
+	enemy = enemy.substring(enemy.lastIndexOf('/') + 1)
+
+	console.log(player + " VS " + enemy)
+
 	if (player == enemy) {
 		tie();
 	}
